@@ -1,0 +1,40 @@
+testsourcetoggle.txt*                           Switch between source and test
+============================================================================== 
+CONTENTS                                                    *testsourcetoggle*
+    Installation...........................: |testsourcetoggle-installation|
+    Usage..................................: |testsourcetoggle-usage|
+==============================================================================
+INSTALLATION                                   *testsourcetoggle-installation*
+
+You can install this plugin by using a plugin manager like Vundle. 
+You can install it by cloning the repository.
+>
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+After cloning it add following to your ~/.vimrc:
+>
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    Plugin 'kanitkameh/testsourcetoggle'
+    call vundle#end()            " required
+<
+Alternatively you can manually clone this plugin 
+and add it to your runtime path.
+>
+    git clone git@github.com:kanitkameh/testsourcetoggle.vim.git ~/.vim/bundle/testsourcetoggle.vim
+<
+Then add this to your ~/.vimrc:
+>
+    set rtp+=~/.vim/bundle/testsourcetoggle.vim
+<
+
+Now you can use testsourcetoggle. Enjoy!
+
+==============================================================================
+USAGE                                                 *testsourcetoggle-usage*
+
+The plugin provides the following commands:
+
+TestSourceToggle                                        *TestSourceToggle*
+Switches between source and test files. Creates the file if it doesn't exist
+
+vim:tw=78:sw=4:ft=help:norl:
